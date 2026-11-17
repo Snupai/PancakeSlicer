@@ -1,0 +1,43 @@
+{
+	"type": "filament",
+	"name": "fdm_filament_pla",
+	"inherits": "fdm_filament_common",
+	"from": "system",
+	"instantiation": "false",
+	"filament_type": [
+		"PLA"
+	],
+	"filament_density": [
+		"1.24"
+	],
+	"nozzle_temperature": [
+		"195"
+	],
+	"nozzle_temperature_initial_layer": [
+		"195"
+	],
+	"cool_plate_temp": [
+		"60"
+	],
+	"cool_plate_temp_initial_layer": [
+		"60"
+	],
+	"eng_plate_temp": [
+		"60"
+	],
+	"eng_plate_temp_initial_layer": [
+		"60"
+	],
+	"hot_plate_temp": [
+		"60"
+	],
+	"hot_plate_temp_initial_layer": [
+		"60"
+	],
+	"textured_plate_temp": [
+		"60"
+	],
+	"textured_plate_temp_initial_layer": [
+		"60"
+	]
+}

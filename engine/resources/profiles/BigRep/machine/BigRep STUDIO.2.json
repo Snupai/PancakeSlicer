@@ -1,0 +1,12 @@
+{
+	"type": "machine_model",
+	"name": "BigRep STUDIO.2",
+	"model_id": "BigRep-STUDIO-2",
+	"nozzle_diameter": "0.6",
+	"machine_tech": "FFF",
+	"family": "BigRep",
+	"bed_model": "",
+	"bed_texture": "",
+	"hotend_model": "",
+	"default_materials": "BigRep Generic PLA @STUDIO.2"
+}

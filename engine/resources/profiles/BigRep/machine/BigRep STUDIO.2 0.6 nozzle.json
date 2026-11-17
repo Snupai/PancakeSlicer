@@ -1,0 +1,11 @@
+{
+	"type": "machine",
+	"name": "BigRep STUDIO.2 0.6 nozzle",
+	"inherits": "fdm_bigrep_studio_2_common",
+	"from": "system",
+	"setting_id": "BGRPstudio2m0600",
+	"instantiation": "true",
+	"printer_model": "BigRep STUDIO.2",
+	"printer_variant": "0.6",
+	"default_print_profile": "0.20mm Standard @BigRep STUDIO.2"
+}

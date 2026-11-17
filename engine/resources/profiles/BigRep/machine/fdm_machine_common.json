@@ -1,0 +1,15 @@
+{
+	"type": "machine",
+	"name": "fdm_machine_common",
+	"from": "system",
+	"instantiation": "false",
+	"printer_technology": "FFF",
+	"gcode_flavor": "marlin",
+	"printer_settings_id": "",
+	"default_print_profile": "",
+	"thumbnails": [
+		""
+	],
+	"before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\n",
+	"layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]"
+}

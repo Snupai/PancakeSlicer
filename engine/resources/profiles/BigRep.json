@@ -1,0 +1,50 @@
+{
+	"name": "BigRep",
+	"version": "02.04.00.01",
+	"force_update": "0",
+	"description": "BigRep configurations",
+	"machine_model_list": [
+		{
+			"name": "BigRep STUDIO.2",
+			"sub_path": "machine/BigRep STUDIO.2.json"
+		}
+	],
+	"machine_list": [
+		{
+			"name": "fdm_machine_common",
+			"sub_path": "machine/fdm_machine_common.json"
+		},
+		{
+			"name": "fdm_bigrep_studio_2_common",
+			"sub_path": "machine/fdm_bigrep_studio_2_common.json"
+		},
+		{
+			"name": "BigRep STUDIO.2 0.6 nozzle",
+			"sub_path": "machine/BigRep STUDIO.2 0.6 nozzle.json"
+		}
+	],
+	"process_list": [
+		{
+			"name": "fdm_process_common",
+			"sub_path": "process/fdm_process_common.json"
+		},
+		{
+			"name": "0.20mm Standard @BigRep STUDIO.2",
+			"sub_path": "process/0.20mm Standard @BigRep STUDIO.2.json"
+		}
+	],
+	"filament_list": [
+		{
+			"name": "fdm_filament_common",
+			"sub_path": "filament/fdm_filament_common.json"
+		},
+		{
+			"name": "fdm_filament_pla",
+			"sub_path": "filament/fdm_filament_pla.json"
+		},
+		{
+			"name": "BigRep Generic PLA @STUDIO.2",
+			"sub_path": "filament/BigRep Generic PLA @STUDIO.2.json"
+		}
+	]
+}
