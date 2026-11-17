@@ -15,6 +15,7 @@
 #include <catch2/catch_message.hpp>
 #include <catch2/generators/catch_generators.hpp>
 #include "libslic3r/PresetBundle.hpp"
+#include "libslic3r/Nonplanar/HeadEnvelope.hpp"
 #include "libslic3r/IMEXHelpers.hpp"
 #include "libslic3r/ParallelResolve.hpp"
 #include "libslic3r/AppConfig.hpp"
@@ -227,6 +228,53 @@ TEST_CASE("A malformed entry in a vendor's preset list is counted, not thrown", 
 
     CHECK(bundle.error_count() > 0);
     CHECK(loaded == 1);
+}
+
+TEST_CASE("The bundled BigRep vendor loads and points the STUDIO.2 at its head", "[Preset][Bundle][Nonplanar]")
+{
+    PresetBundle bundle;
+    std::pair<PresetsConfigSubstitutions, size_t> loaded;
+    REQUIRE_NOTHROW(loaded = bundle.load_vendor_configs_from_json(std::string(PROFILES_DIR), "BigRep", PresetBundle::LoadSystem,
+                                                                  ForwardCompatibilitySubstitutionRule::EnableSilent));
+    CHECK(bundle.error_count() == 0);
+    CHECK(loaded.first.empty());
+
+    const Preset *printer = bundle.printers.find_preset("BigRep STUDIO.2 0.6 nozzle");
+    REQUIRE(printer != nullptr);
+    const DynamicPrintConfig &machine = printer->config;
+    CHECK(machine.opt_string("nonplanar_head") == "bigrep-studio-2");
+    CHECK(machine.option<ConfigOptionFloats>("nozzle_diameter")->values == std::vector<double>{ 0.6, 0.6 });
+    CHECK(machine.option<ConfigOptionPoints>("extruder_offset")->values == std::vector<Vec2d>{ Vec2d::Zero(), Vec2d::Zero() });
+    CHECK(machine.option<ConfigOptionPoints>("printable_area")->values ==
+          std::vector<Vec2d>{ Vec2d(0, 0), Vec2d(1000, 0), Vec2d(1000, 500), Vec2d(0, 500) });
+    CHECK_FALSE(machine.opt_bool("use_relative_e_distances"));
+
+    const std::string previous = resources_dir();
+    set_resources_dir((fs::path(std::string(PROFILES_DIR)) / "..").string());
+    Nonplanar::HeadLibrary::instance().reload();
+    const Nonplanar::HeadEnvelope *head = Nonplanar::HeadLibrary::instance().find(machine.opt_string("nonplanar_head"));
+    CHECK(head != nullptr);
+    set_resources_dir(previous);
+    Nonplanar::HeadLibrary::instance().reload();
+
+    size_t processes = 0, filaments = 0;
+    for (const Preset &process : bundle.prints)
+        if (process.is_system && process.vendor != nullptr && process.vendor->id == "BigRep") {
+            INFO(process.name);
+            CHECK(process.config.option<ConfigOptionStrings>("compatible_printers")->values == std::vector<std::string>{ printer->name });
+            ++processes;
+        }
+    for (const Preset &filament : bundle.filaments)
+        if (filament.is_system && filament.vendor != nullptr && filament.vendor->id == "BigRep") {
+            INFO(filament.name);
+            CHECK(filament.config.option<ConfigOptionFloats>("filament_diameter")->values == std::vector<double>{ 2.85 });
+            CHECK(filament.config.option<ConfigOptionStrings>("compatible_printers")->values == std::vector<std::string>{ printer->name });
+            ++filaments;
+        }
+    CHECK(processes == 6);
+    CHECK(filaments == 13);
+    CHECK(bundle.prints.find_preset(machine.opt_string("default_print_profile")) != nullptr);
+    CHECK(bundle.filaments.find_preset(machine.option<ConfigOptionStrings>("default_filament_profile")->values.front()) != nullptr);
 }
 
 TEST_CASE("Printer extruder count tolerates missing nozzle diameter", "[Preset][Bundle]")

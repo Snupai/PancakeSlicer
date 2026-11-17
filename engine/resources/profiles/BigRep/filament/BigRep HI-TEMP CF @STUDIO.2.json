@@ -3,8 +3,8 @@
 	"name": "BigRep HI-TEMP CF @STUDIO.2",
 	"inherits": "fdm_filament_common",
 	"from": "system",
-	"setting_id": "BGRPf6223c50383f",
-	"filament_id": "BR6223c5",
+	"setting_id": "75gUbzgur9a1WR9z",
+	"filament_id": "OFXopASH",
 	"instantiation": "true",
 	"filament_type": [
 		"PLA-CF"

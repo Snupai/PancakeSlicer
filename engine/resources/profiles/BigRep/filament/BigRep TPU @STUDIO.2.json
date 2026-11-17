@@ -3,8 +3,8 @@
 	"name": "BigRep TPU @STUDIO.2",
 	"inherits": "fdm_filament_common",
 	"from": "system",
-	"setting_id": "BGRPf2152f8d15da",
-	"filament_id": "BR2152f8",
+	"setting_id": "KQV8XzDKy5t657iw",
+	"filament_id": "OFcPvoK3",
 	"instantiation": "true",
 	"filament_type": [
 		"TPU"

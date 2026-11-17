@@ -3,8 +3,8 @@
 	"name": "BigRep PLX @STUDIO.2",
 	"inherits": "fdm_filament_common",
 	"from": "system",
-	"setting_id": "BGRPf342286087a6",
-	"filament_id": "BR342286",
+	"setting_id": "NW6FuBPB4BhUQbas",
+	"filament_id": "OFEobHob",
 	"instantiation": "true",
 	"filament_type": [
 		"PLA"

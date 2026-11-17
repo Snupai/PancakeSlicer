@@ -3,8 +3,8 @@
 	"name": "BigRep BVOH @STUDIO.2",
 	"inherits": "fdm_filament_common",
 	"from": "system",
-	"setting_id": "BGRPf2a2d256fe82",
-	"filament_id": "BR2a2d25",
+	"setting_id": "uP22zVQPJgjvVbKj",
+	"filament_id": "OFv7djju",
 	"instantiation": "true",
 	"filament_type": [
 		"BVOH"

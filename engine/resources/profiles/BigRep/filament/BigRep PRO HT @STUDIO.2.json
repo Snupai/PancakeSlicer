@@ -3,8 +3,8 @@
 	"name": "BigRep PRO HT @STUDIO.2",
 	"inherits": "fdm_filament_common",
 	"from": "system",
-	"setting_id": "BGRPf41b557251ca",
-	"filament_id": "BR41b557",
+	"setting_id": "0D8mTDITfOJFGCmj",
+	"filament_id": "OFFSt7ZT",
 	"instantiation": "true",
 	"filament_type": [
 		"PLA"

@@ -3,7 +3,7 @@
 	"name": "0.50mm Standard @BigRep STUDIO.2",
 	"inherits": "fdm_process_common",
 	"from": "system",
-	"setting_id": "BGRPp13de0437a61",
+	"setting_id": "gdX12xfiMrzPbEyf",
 	"instantiation": "true",
 	"layer_height": "0.5",
 	"initial_layer_print_height": "0.5",

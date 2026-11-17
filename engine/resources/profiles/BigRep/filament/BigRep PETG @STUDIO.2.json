@@ -3,8 +3,8 @@
 	"name": "BigRep PETG @STUDIO.2",
 	"inherits": "fdm_filament_common",
 	"from": "system",
-	"setting_id": "BGRPf88234ccf934",
-	"filament_id": "BR88234c",
+	"setting_id": "T2NHNAhRLzszzlnU",
+	"filament_id": "OFdaUIyQ",
 	"instantiation": "true",
 	"filament_type": [
 		"PETG"

@@ -3,8 +3,8 @@
 	"name": "BigRep HI-TEMP Support-Adhesion Test @STUDIO.2",
 	"inherits": "fdm_filament_common",
 	"from": "system",
-	"setting_id": "BGRPf77ae85645ee",
-	"filament_id": "BR77ae85",
+	"setting_id": "K4rCxsgsrcJELVEu",
+	"filament_id": "OF5EMeGA",
 	"instantiation": "true",
 	"filament_type": [
 		"PLA"

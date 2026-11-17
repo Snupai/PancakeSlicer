@@ -3,7 +3,7 @@
 	"name": "BigRep STUDIO.2 0.6 nozzle",
 	"inherits": "fdm_bigrep_studio_2_common",
 	"from": "system",
-	"setting_id": "BGRPstudio2m0600",
+	"setting_id": "y49Cdgh4IQfD7qgJ",
 	"instantiation": "true",
 	"printer_model": "BigRep STUDIO.2",
 	"printer_variant": "0.6",

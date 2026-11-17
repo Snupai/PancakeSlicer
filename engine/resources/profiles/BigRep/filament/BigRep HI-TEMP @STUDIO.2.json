@@ -3,8 +3,8 @@
 	"name": "BigRep HI-TEMP @STUDIO.2",
 	"inherits": "fdm_filament_common",
 	"from": "system",
-	"setting_id": "BGRPf5b3ee8360f3",
-	"filament_id": "BR5b3ee8",
+	"setting_id": "wcusNFq7kz6cwkRg",
+	"filament_id": "OFJZcKGQ",
 	"instantiation": "true",
 	"filament_type": [
 		"PLA"
