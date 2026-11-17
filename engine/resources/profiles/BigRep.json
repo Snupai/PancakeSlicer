@@ -1,8 +1,8 @@
 {
 	"name": "BigRep",
-	"version": "02.04.00.01",
+	"version": "02.04.00.02",
 	"force_update": "0",
-	"description": "BigRep configurations",
+	"description": "BigRep configurations (ported from BigRep BLADE 5.17.4)",
 	"machine_model_list": [
 		{
 			"name": "BigRep STUDIO.2",
@@ -29,8 +29,28 @@
 			"sub_path": "process/fdm_process_common.json"
 		},
 		{
+			"name": "0.10mm Standard @BigRep STUDIO.2",
+			"sub_path": "process/0.10mm Standard @BigRep STUDIO.2.json"
+		},
+		{
 			"name": "0.20mm Standard @BigRep STUDIO.2",
 			"sub_path": "process/0.20mm Standard @BigRep STUDIO.2.json"
+		},
+		{
+			"name": "0.30mm Standard @BigRep STUDIO.2",
+			"sub_path": "process/0.30mm Standard @BigRep STUDIO.2.json"
+		},
+		{
+			"name": "0.40mm Standard @BigRep STUDIO.2",
+			"sub_path": "process/0.40mm Standard @BigRep STUDIO.2.json"
+		},
+		{
+			"name": "0.50mm Standard @BigRep STUDIO.2",
+			"sub_path": "process/0.50mm Standard @BigRep STUDIO.2.json"
+		},
+		{
+			"name": "0.30mm HI-TEMP Support-Adhesion Test @BigRep STUDIO.2",
+			"sub_path": "process/0.30mm HI-TEMP Support-Adhesion Test @BigRep STUDIO.2.json"
 		}
 	],
 	"filament_list": [
@@ -39,12 +59,56 @@
 			"sub_path": "filament/fdm_filament_common.json"
 		},
 		{
-			"name": "fdm_filament_pla",
-			"sub_path": "filament/fdm_filament_pla.json"
+			"name": "BigRep HI-TEMP @STUDIO.2",
+			"sub_path": "filament/BigRep HI-TEMP @STUDIO.2.json"
 		},
 		{
-			"name": "BigRep Generic PLA @STUDIO.2",
-			"sub_path": "filament/BigRep Generic PLA @STUDIO.2.json"
+			"name": "BigRep HI-TEMP CF @STUDIO.2",
+			"sub_path": "filament/BigRep HI-TEMP CF @STUDIO.2.json"
+		},
+		{
+			"name": "BigRep PLA @STUDIO.2",
+			"sub_path": "filament/BigRep PLA @STUDIO.2.json"
+		},
+		{
+			"name": "BigRep rPLA @STUDIO.2",
+			"sub_path": "filament/BigRep rPLA @STUDIO.2.json"
+		},
+		{
+			"name": "BigRep PLX @STUDIO.2",
+			"sub_path": "filament/BigRep PLX @STUDIO.2.json"
+		},
+		{
+			"name": "BigRep PETG @STUDIO.2",
+			"sub_path": "filament/BigRep PETG @STUDIO.2.json"
+		},
+		{
+			"name": "BigRep rPETG @STUDIO.2",
+			"sub_path": "filament/BigRep rPETG @STUDIO.2.json"
+		},
+		{
+			"name": "BigRep PRO HT @STUDIO.2",
+			"sub_path": "filament/BigRep PRO HT @STUDIO.2.json"
+		},
+		{
+			"name": "BigRep ASA @STUDIO.2",
+			"sub_path": "filament/BigRep ASA @STUDIO.2.json"
+		},
+		{
+			"name": "BigRep BVOH @STUDIO.2",
+			"sub_path": "filament/BigRep BVOH @STUDIO.2.json"
+		},
+		{
+			"name": "BigRep TPU @STUDIO.2",
+			"sub_path": "filament/BigRep TPU @STUDIO.2.json"
+		},
+		{
+			"name": "BigRep PA6-66 @STUDIO.2",
+			"sub_path": "filament/BigRep PA6-66 @STUDIO.2.json"
+		},
+		{
+			"name": "BigRep HI-TEMP Support-Adhesion Test @STUDIO.2",
+			"sub_path": "filament/BigRep HI-TEMP Support-Adhesion Test @STUDIO.2.json"
 		}
 	]
 }

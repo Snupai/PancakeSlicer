@@ -8,5 +8,5 @@
 	"bed_model": "",
 	"bed_texture": "",
 	"hotend_model": "",
-	"default_materials": "BigRep Generic PLA @STUDIO.2"
+	"default_materials": "BigRep HI-TEMP @STUDIO.2;BigRep HI-TEMP CF @STUDIO.2;BigRep PLA @STUDIO.2;BigRep rPLA @STUDIO.2;BigRep PLX @STUDIO.2;BigRep PETG @STUDIO.2;BigRep rPETG @STUDIO.2;BigRep PRO HT @STUDIO.2;BigRep ASA @STUDIO.2;BigRep BVOH @STUDIO.2;BigRep TPU @STUDIO.2;BigRep PA6-66 @STUDIO.2"
 }

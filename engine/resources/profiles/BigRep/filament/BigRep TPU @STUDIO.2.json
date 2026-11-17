@@ -1,0 +1,114 @@
+{
+	"type": "filament",
+	"name": "BigRep TPU @STUDIO.2",
+	"inherits": "fdm_filament_common",
+	"from": "system",
+	"setting_id": "BGRPf2152f8d15da",
+	"filament_id": "BR2152f8",
+	"instantiation": "true",
+	"filament_type": [
+		"TPU"
+	],
+	"filament_vendor": [
+		"BigRep"
+	],
+	"filament_diameter": [
+		"2.85"
+	],
+	"filament_density": [
+		"1.2"
+	],
+	"nozzle_temperature": [
+		"220"
+	],
+	"nozzle_temperature_initial_layer": [
+		"220"
+	],
+	"nozzle_temperature_range_low": [
+		"220"
+	],
+	"nozzle_temperature_range_high": [
+		"220"
+	],
+	"idle_temperature": [
+		"150"
+	],
+	"filament_flow_ratio": [
+		"1.3"
+	],
+	"filament_max_volumetric_speed": [
+		"10.08"
+	],
+	"filament_shrink": [
+		"99.9%"
+	],
+	"filament_shrinkage_compensation_z": [
+		"99.9%"
+	],
+	"fan_min_speed": [
+		"75"
+	],
+	"fan_max_speed": [
+		"75"
+	],
+	"slow_down_for_layer_cooling": [
+		"1"
+	],
+	"reduce_fan_stop_start_freq": [
+		"1"
+	],
+	"enable_overhang_bridge_fan": [
+		"0"
+	],
+	"slow_down_layer_time": [
+		"10"
+	],
+	"fan_cooling_layer_time": [
+		"10"
+	],
+	"slow_down_min_speed": [
+		"20"
+	],
+	"full_fan_speed_layer": [
+		"2"
+	],
+	"close_fan_the_first_x_layers": [
+		"1"
+	],
+	"cool_plate_temp": [
+		"60"
+	],
+	"cool_plate_temp_initial_layer": [
+		"60"
+	],
+	"eng_plate_temp": [
+		"60"
+	],
+	"eng_plate_temp_initial_layer": [
+		"60"
+	],
+	"hot_plate_temp": [
+		"60"
+	],
+	"hot_plate_temp_initial_layer": [
+		"60"
+	],
+	"textured_plate_temp": [
+		"60"
+	],
+	"textured_plate_temp_initial_layer": [
+		"60"
+	],
+	"filament_deretraction_speed": [
+		"10"
+	],
+	"filament_retract_restart_extra": [
+		"-3"
+	],
+	"filament_z_hop": [
+		"0.4"
+	],
+	"compatible_printers": [
+		"BigRep STUDIO.2 0.6 nozzle"
+	]
+}

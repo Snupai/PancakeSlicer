@@ -3,14 +3,8 @@
 	"name": "fdm_filament_common",
 	"from": "system",
 	"instantiation": "false",
-	"filament_diameter": [
-		"1.75"
-	],
 	"filament_settings_id": [
 		""
-	],
-	"filament_vendor": [
-		"Generic"
 	],
 	"compatible_printers": [],
 	"compatible_printers_condition": ""
